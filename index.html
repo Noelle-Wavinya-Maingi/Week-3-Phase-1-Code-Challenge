@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Film Cardbox</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+    <h2>Add Movies to Dream Shop</h2>
+    <form class="add-film">
+        <input type="text" id="name" name="title" placeholder="Movie title"><br>
+      
+        <input type="text" id="runtime" name="runtime" placeholder="Runtime"><br>
+      
+        
+        <input type="text" id="capacity" name="capacity" placeholder="Capacity"><br>
+      
+        <input type="text" name="showtime" id="showtime" placeholder="Showtime"><br>
+      
+        
+        <textarea id="description" name="description" placeholder="Description"></textarea><br>
+      
+       
+        <input type="url" id="poster" name="poster" placeholder="Poster url"><br>
+      
+        <label for="preview">Preview:</label>
+        <img id="preview" src="" alt=""><br>
+      
+        <input type="submit" value="Add Film">
+      </form>
+      
+    <div id="film-cardbox"></div>
+
+    <div id="film-details">
+        <h2 id="film-title"></h2>
+        <p id="film-description"></p>
+        <p id="film-runtime"></p>
+        <p id="film-showtime"></p>
+        <p id="film-tickets-sold"></p>
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
