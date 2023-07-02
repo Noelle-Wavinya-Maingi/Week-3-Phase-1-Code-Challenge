@@ -17,7 +17,7 @@ As a user, I can:
    available tickets will need to be derived by subtracting the number of
    `tickets_sold` from the theater's `capacity`. You will need to make a GET
    request to the following endpoint to retrieve the film data:
-
+```txt
    GET /films/1
 
    Example Response:
@@ -31,6 +31,8 @@ As a user, I can:
    "description": "A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature.",
    "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
    }
+
+   ```
 
 2. Buy a ticket for a movie. After clicking the "Buy Ticket" button, I should
    see the number of available tickets decreasing on the frontend. I should not
