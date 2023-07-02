@@ -4,33 +4,42 @@
 <head>
     <title>Film Cardbox</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 </head>
 
 <body>
     <h2>Add Movies to Dream Shop</h2>
+    <div class="form">
     <form class="add-film">
-        <input type="text" id="title" name="title" placeholder="Movie title"><br>
+        <input type="hidden" id="filmId">
+        <input type="text" id="title" name="title" placeholder="Movie title" required><br>
       
-        <input type="text" id="runtime" name="runtime" placeholder="Runtime"><br>
-      
-        
-        <input type="text" id="capacity" name="capacity" placeholder="Capacity"><br>
-      
-        <input type="text" name="showtime" id="showtime" placeholder="Showtime"><br>
+        <input type="text" id="runtime" name="runtime" placeholder="Runtime" required><br>
       
         
-        <textarea id="description" name="description" placeholder="Description"></textarea><br>
+        <input type="text" id="capacity" name="capacity" placeholder="Capacity" required><br>
+      
+        <input type="text" name="showtime" id="showtime" placeholder="Showtime" required><br>
+      
+        
+        <textarea id="description" name="description" placeholder="Description" required></textarea><br>
       
        
-        <input type="url" id="poster" name="poster" placeholder="Poster url"><br>
+        <input type="url" id="poster" name="poster" placeholder="Poster url" required><br>
       
         <label for="preview">Preview:</label>
-        <img id="preview" src="" alt=""><br>
+        <img id="preview" src="" alt="" style="height: 25%;width: 50%;", ><br>
       
         <input type="submit" value="Add Film">
       </form>
+    </div>
       
-    <div id="film-cardbox"></div>
 
     <div id="film-details">
         <h2 id="film-title"></h2>
@@ -40,7 +49,7 @@
         <p id="film-tickets-sold"></p>
     </div>
 
-    <script src="./src/script.js"></script>
+    <script src="./src/index.js"></script>
 </body>
 
 </html>

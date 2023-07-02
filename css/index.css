@@ -12,14 +12,13 @@ body {
   text-align: center;
   display: inline-flex;
   flex-direction: column;
-  background-color: #f7f7f7;
   background-image: linear-gradient(to left, black, silver);
   background-size: 50px 50px;
 }
 
 .card:hover {
   background-color: #c1c1c1;
-  border-color: #c1c1c1; 
+  border-color: #c1c1c1;
   animation: pulse 2s infinite;
 }
 
@@ -32,11 +31,6 @@ body {
     background-position: 50px 50px;
   }
 }
-
-.card:hover .film-card-poster {
-  opacity: 0.3;
-}
-
 .card:hover .middle {
   opacity: 1;
 }
@@ -48,10 +42,10 @@ body {
   width: 200px;
   padding: 20px 32px;
   margin-left: 4px;
+  opacity: 0.96;
 }
 
-
-.card:hover .film-card-details  {
+.card:hover .film-card-details {
   visibility: visible;
   opacity: 1;
 }
@@ -61,8 +55,8 @@ body {
   bottom: 10px;
   left: 0;
   width: 97%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  background-color: #c1c1c1;
+  color: #000;
   padding: 5px;
   visibility: hidden;
   opacity: 0;
@@ -89,77 +83,92 @@ body {
   cursor: pointer;
 }
 
+.buy-button:hover{
+  background-color:#4caf50;
+}
+
+.Delete {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #c1c1c1;
+  margin-left: 5px;
+  font-size: 17px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Delete:hover {
+  color: red;
+}
+
 .add-film {
-    background: linear-gradient(to left, black, #c1c1c1);
-    border-radius: 5px;
-    width: 50%;
-    margin-left: 450px;
-    padding-top: 40px;
-  }
-  
-  .add-film input[type="text"],
-  .add-film textarea,
-  .add-film input[type="url"] {
-    background: #c1c1c1;
-    width: 80%;
-    padding: 15px;
-    margin-left: 80px;
-    margin-bottom: 25px;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  label {
-    width: 80%;
-    padding: 15px;
-    margin-left: 80px;
-    margin-bottom: 25px;
-    border-style: none;
-  }
+  background: linear-gradient(to left, black, #c1c1c1);
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 450px;
+  padding-top: 40px;
+}
 
+.add-film input[type="text"],
+.add-film textarea,
+.add-film input[type="url"] {
+  background: #c1c1c1;
+  width: 80%;
+  padding: 15px;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 3px;
+}
 
-  .add-film input[type="text"]:focus,
-  .add-film textarea:focus,
-  .add-film input[type="url"]:focus {
-    border: 2px solid ;
-    outline: none;
-  }
-  
-  .add-film input[type="text"]::placeholder,
-  .add-film textarea::placeholder,
-  .add-film input[type="url"]::placeholder {
-    text-align: center;
-  }
-    
-  .add-film input[type="submit"] {
-    background-color: #4CAF50; /* Base green color */
-    color: #cccccc;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-left: 450px;
-    margin-bottom: 30px;
-  }
-  
-  .add-film input[type="submit"]:hover {
-    background-color: #45a049; 
-  }
-  
-  .add-film input[type="submit"]:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
-  }
+label {
+  width: 80%;
+  padding: 15px;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  border-style: none;
+}
+
+.add-film input[type="text"]:focus,
+.add-film textarea:focus,
+.add-film input[type="url"]:focus {
+  border: 2px solid;
+  outline: none;
+}
+
+.add-film input[type="text"]::placeholder,
+.add-film textarea::placeholder,
+.add-film input[type="url"]::placeholder {
+  text-align: center;
+}
+
+.add-film input[type="submit"] {
+  background-color: #4caf50; /* Base green color */
+  color: #cccccc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 450px;
+  margin-bottom: 30px;
+}
+
+.add-film input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.add-film input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
+}
 h2 {
   text-align: center;
-  font-family: 'Tangerine', cursive;
+  font-family: "Tangerine", cursive;
   font-size: 40px;
   color: #cccccc;
 }
 
-p{
+p {
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
-

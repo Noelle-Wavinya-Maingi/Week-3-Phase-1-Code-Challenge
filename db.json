@@ -6,7 +6,7 @@
       "runtime": "108",
       "capacity": 30,
       "showtime": "04:00PM",
-      "tickets_sold": 27,
+      "tickets_sold": 28,
       "description": "A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
     },
@@ -66,7 +66,7 @@
       "runtime": "94",
       "capacity": 30,
       "showtime": "07:30PM",
-      "tickets_sold": 23,
+      "tickets_sold": 22,
       "description": "A woman seeks revenge on her former lover, who owns a skydiving business.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/40518/p40518_v_v8_aa.jpg"
     },
@@ -127,7 +127,7 @@
       "runtime": "100",
       "capacity": 40,
       "showtime": "09:00PM",
-      "tickets_sold": 32,
+      "tickets_sold": 31,
       "description": "A stock car driver goes undercover as the wheel man for a motorcycle gang.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/45367/p45367_v_v8_aa.jpg"
     },
@@ -150,6 +150,16 @@
       "tickets_sold": 33,
       "description": "Delinquent teen-agers ingest a substance and grow thirty feet tall, then proceed to take over a small town.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/37991/p37991_v_v8_aa.jpg"
+    },
+    {
+      "id": 1688295941829,
+      "title": "London Has Fallen",
+      "runtime": "99",
+      "capacity": "65",
+      "showtime": "10:00 PM",
+      "tickets_sold": 0,
+      "description": "When a terrorist attacks leaders across the world who attend the British Prime Minister's funeral, a Secret Service agent tries to escape with his team.",
+      "poster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh5F3iK1SfRyFGoUi9ExwueK4-iehDEc-11adjn3H6nUI12Ds4"
     }
   ]
 }

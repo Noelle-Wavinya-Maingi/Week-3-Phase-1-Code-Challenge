@@ -9,7 +9,9 @@ posterInput.addEventListener("input", () => {
 // Event handler for the event listener
 function handleSubmit(event) {
   event.preventDefault();
+  let filmId = Date.now();
   let filmObject = {
+    id: filmId,
     title: event.target.title.value,
     runtime: event.target.runtime.value,
     capacity: event.target.capacity.value,
@@ -22,7 +24,7 @@ function handleSubmit(event) {
   addFilm(filmObject);
 }
 
-// Fetch request
+// Fetch request for films as well as Patch, Post and Delete
 function getFilm() {
   fetch("http://localhost:3000/films")
     .then((response) => response.json())
@@ -57,13 +59,12 @@ function updateFilm(filmObject) {
 }
 
 function deleteFilm(id) {
-//   fetch(`http://localhost:3000/films/${id}`, {
-//     method: "DELETE",
-//     headers: { "Content-type": "application/json" },
-//   })
-//     .then((response) => response.json())
-//     .then((film) => console.log(film));
-console.log(id);
+  fetch(`http://localhost:3000/films/${id}`, {
+    method: "DELETE",
+    headers: { "Content-type": "application/json" },
+  })
+    .then((response) => response.json())
+    .then((film) => console.log(film));
 }
 
 // DOM manipulation functions
@@ -72,7 +73,9 @@ function renderFilm(film) {
   let card = document.createElement("div");
   card.className = "card";
   card.innerHTML = `
-    <img src="${film.poster}" alt="${film.title}" class="film-card-poster" style="width:100%">
+    <img src="${film.poster}" alt="${
+    film.title
+  }" class="film-card-poster" style="width:100%">
     <div class="middle">
         <div class="text">
             <h2 id="film-title">${film.title}</h2>
@@ -83,19 +86,23 @@ function renderFilm(film) {
         </div>
     </div>
     <div class="film-card-details">
-        <span class="tickets-count">Available Tickets: ${film.capacity - film.tickets_sold} Tickets</span>
+        <span class="tickets-count">Available Tickets: ${
+          film.capacity - film.tickets_sold
+        } Tickets</span>
         <button class="buy-button">Buy Ticket</button> 
-        <button class = "Delete" onClick = "(deleteFilm(${film.id}))">Delete</button>
+        <button class = "Delete" onClick = "(deleteFilm(${
+          film.id
+        }))"><i class="fal fa-trash-alt"></i></button>
     </div>
   `;
 
   card.querySelector(".buy-button").addEventListener("click", () => {
-   if(film.tickets_sold >= film.capacity){
-    film.tickets_sold === film.capacity;
-    alert(`${film.title} is sold out!`)
-   }else{
-    film.tickets_sold += 1;
-   }
+    if (film.tickets_sold >= film.capacity) {
+      film.tickets_sold === film.capacity;
+      alert(`${film.title} is sold out!`);
+    } else {
+      film.tickets_sold += 1;
+    }
     card.querySelector("span").innerHTML = film.tickets_sold;
     updateFilm(film);
   });
@@ -107,7 +114,6 @@ function renderFilm(film) {
 // Get data and render films to the DOM
 function initialize() {
   getFilm();
-  console.log("After get all films");
 }
 
 initialize();
