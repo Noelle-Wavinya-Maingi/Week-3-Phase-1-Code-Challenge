@@ -32,7 +32,6 @@ function getFilm() {
       data.forEach((film) => {
         renderFilm(film);
       });
-      console.log("Before fetch returns");
     });
 }
 
@@ -97,18 +96,17 @@ function renderFilm(film) {
 
   card.querySelector(".buy-button").addEventListener("click", () => {
     if (film.tickets_sold >= film.capacity) {
-      film.tickets_sold === film.capacity;
       alert(`${film.title} is sold out!`);
     } else {
       film.tickets_sold += 1;
     }
+
     card.querySelector("span").innerHTML = film.tickets_sold;
     updateFilm(film);
   });
 
   document.querySelector("#film-details").appendChild(card);
 }
-
 // Initialize render
 // Get data and render films to the DOM
 function initialize() {

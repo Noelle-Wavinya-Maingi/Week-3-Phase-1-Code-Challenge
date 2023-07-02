@@ -161,7 +161,14 @@ label {
   outline: none;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
 }
-h2 {
+#heading{
+  text-align: center;
+  font-family: "Tangerine", cursive;
+  font-size: 40px;
+  
+}
+
+#film-title {
   text-align: center;
   font-family: "Tangerine", cursive;
   font-size: 40px;
@@ -172,3 +179,4 @@ p {
   text-align: center;
   font-family: "Lato", sans-serif;
 }
+

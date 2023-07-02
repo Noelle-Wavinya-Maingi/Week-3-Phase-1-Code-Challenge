@@ -6,7 +6,7 @@
       "runtime": "108",
       "capacity": 30,
       "showtime": "04:00PM",
-      "tickets_sold": 28,
+      "tickets_sold": 30,
       "description": "A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
     },
@@ -36,7 +36,7 @@
       "runtime": "101",
       "capacity": 40,
       "showtime": "09:00PM",
-      "tickets_sold": 31,
+      "tickets_sold": 32,
       "description": "A young man meets a farm girl who is actually a witch.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg"
     },
@@ -160,16 +160,6 @@
       "tickets_sold": 0,
       "description": "When a terrorist attacks leaders across the world who attend the British Prime Minister's funeral, a Secret Service agent tries to escape with his team.",
       "poster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh5F3iK1SfRyFGoUi9ExwueK4-iehDEc-11adjn3H6nUI12Ds4"
-    },
-    {
-      "id": 1688309414837,
-      "title": "The Titanic",
-      "runtime": "194",
-      "capacity": "50",
-      "showtime": "08:15PM",
-      "tickets_sold": 1,
-      "description": "Seventeen-year-old Rose hails from an aristocratic family and is set to be married. When she boards the Titanic, she meets Jack Dawson, an artist, and falls in love with him.",
-      "poster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMWvCb2DAXS5AVLb1p1jsPGOtyABFijuB5xYQ4xgDPFdUCcA40"
     }
   ]
 }
