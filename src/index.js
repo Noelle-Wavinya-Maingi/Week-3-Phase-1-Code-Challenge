@@ -82,7 +82,6 @@ function renderFilm(film) {
             <p id="film-description">${film.description}</p>
             <p id="film-runtime">Duration: ${film.runtime} minutes</p>
             <p id="film-showtime">Showtime: ${film.showtime}</p>
-            <p id="film-tickets-sold">Tickets Sold: ${film.tickets_sold}</p>
         </div>
     </div>
     <div class="film-card-details">
