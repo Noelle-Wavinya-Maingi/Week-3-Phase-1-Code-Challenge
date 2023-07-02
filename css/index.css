@@ -2,11 +2,7 @@ body {
   background-image: linear-gradient(to left, silver, grey);
 }
 
-.active:hover #film-details {
-  display: block;
-  
-}
-.film-card {
+.card {
   position: relative;
   width: 300px;
   margin: 100px 10px 10px 70px;
@@ -21,9 +17,9 @@ body {
   background-size: 50px 50px;
 }
 
-.film-card:hover {
+.card:hover {
   background-color: #c1c1c1;
-  border-color: #c1c1c1;
+  border-color: #c1c1c1; 
   animation: pulse 2s infinite;
 }
 
@@ -37,11 +33,11 @@ body {
   }
 }
 
-.film-card:hover .film-card-poster {
+.card:hover .film-card-poster {
   opacity: 0.3;
 }
 
-.film-card:hover .middle {
+.card:hover .middle {
   opacity: 1;
 }
 
@@ -55,7 +51,7 @@ body {
 }
 
 
-.film-card:hover .film-card-details  {
+.card:hover .film-card-details  {
   visibility: visible;
   opacity: 1;
 }
@@ -118,9 +114,10 @@ body {
     padding: 15px;
     margin-left: 80px;
     margin-bottom: 25px;
-    border: none;
-    border-radius: 3px;
+    border-style: none;
   }
+
+
   .add-film input[type="text"]:focus,
   .add-film textarea:focus,
   .add-film input[type="url"]:focus {
@@ -146,12 +143,12 @@ body {
   }
   
   .add-film input[type="submit"]:hover {
-    background-color: #45a049; /* Darker shade of green on hover */
+    background-color: #45a049; 
   }
   
   .add-film input[type="submit"]:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8); /* Light green box shadow when focused */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
   }
 h2 {
   text-align: center;
